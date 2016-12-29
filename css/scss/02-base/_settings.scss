@@ -14,21 +14,16 @@ body {
     padding-top: 20px;
 }
 
-article {
-    p {
-        &:not(:last-child) {
-            margin-bottom: 1.22rem;
-        }
-    }
-}
 
 .title {
-    font: 72px $ob;
+    font: 4.5rem $ob;
+    font-weight: normal;
 }
 .block-title {
     width: 100%;
     text-align: center;
-    font: 36px $or;
+    font: 2.25rem $or;
+    font-weight: normal;
     text-transform: uppercase;
     color: $gold;
     margin-bottom: 35px;
@@ -38,11 +33,14 @@ article {
     h2 {
         color: $gold;
         text-transform: uppercase;
-        font: 18px $cr;
-        margin-bottom: 22px;
+        font-family: $cr;
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
     }
     p {
-        margin-bottom: 20px;
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
     }
 }
 .justify {
@@ -63,6 +61,7 @@ article {
 // ---------------------------
 .wrapper {
 	width: 1200px;
+    padding: 0 10px;
 	margin: 0 auto;
 	text-align: center;
     &--wide {

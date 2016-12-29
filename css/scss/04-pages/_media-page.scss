@@ -1,0 +1,67 @@
+.media-box {
+    @include flex($alignI: flex-start, $justify: flex-start);
+    margin: 0 -10px -20px;
+    padding: 54px 0 158px;
+}
+
+.post-preview {
+    width: -webkit-calc(33.333% - 20px);
+    width: calc(33.333% - 20px);
+    margin: 0 10px;
+    background-color: #fff;
+    color: $text;
+    text-align: left;
+    margin-bottom: 20px;
+
+    .post-thumbnail {
+        margin: 0;
+        display: block;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .post-info {
+        padding: 2.375rem;
+    }
+
+    .post-date {
+        color: #909090;
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 1.7rem;
+    }
+
+    .post-excerpt {
+        font-family: $csb;
+        font-size: 1.5rem;
+        letter-spacing: 0.025em;
+        line-height: 1.5rem;
+        height: 4.5rem;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1.7rem;
+
+        &:after {
+            content: '';
+            width: 50%;
+            height: 1.5rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+            background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+        }
+    }
+
+    .post-readmore {
+        font-size: 1rem;
+        color: #909090;
+    }
+}
