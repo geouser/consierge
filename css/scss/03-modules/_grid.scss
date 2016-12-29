@@ -1,0 +1,63 @@
+.grid {
+    @include flex($justify: center);
+    margin-top: 65px;
+    &__title {
+        width: 100%;
+        text-align: center;
+        font: 36px $or;
+        text-transform: uppercase;
+        color: $gold;
+        margin-bottom: 35px;
+    }
+    &__item {
+        width: 380px;
+        height: 250px;
+        margin: 10px;
+        position: relative;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        -webkit-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+        &:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: #000;
+            content: '';
+            height: 100%;
+            opacity: .65;
+        }
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: '';
+            height: 100%;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 98%;
+            color: #FFF;
+            text-transform: uppercase;
+            font-size: 18px;
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &__controls {
+        width: 100%;
+        text-align: center;
+        span {
+            display: block;
+            color: #FFF;
+            margin-top: 75px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-family: $cb;
+        }
+    }
+}
