@@ -1,0 +1,26 @@
+/*buttons*/
+.button {
+    height: 3rem;
+    display: inline-block;
+    padding: 0 2rem;
+    line-height: 3.3rem;
+    letter-spacing: 0.1em;
+    font-family: $cb;
+    text-transform: uppercase;
+    background: -moz-linear-gradient(left, rgba(233,175,27,1) 0%, rgba(233,175,27,1) 15%, rgba(255,243,168,1) 50%, rgba(233,175,27,1) 85%, rgba(233,175,27,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(233,175,27,1)), color-stop(15%, rgba(233,175,27,1)), color-stop(50%, rgba(255,243,168,1)), color-stop(85%, rgba(233,175,27,1)), color-stop(100%, rgba(233,175,27,1)));
+    background: -webkit-linear-gradient(left, rgba(233,175,27,1) 0%, rgba(233,175,27,1) 15%, rgba(255,243,168,1) 50%, rgba(233,175,27,1) 85%, rgba(233,175,27,1) 100%);
+    background: -o-linear-gradient(left, rgba(233,175,27,1) 0%, rgba(233,175,27,1) 15%, rgba(255,243,168,1) 50%, rgba(233,175,27,1) 85%, rgba(233,175,27,1) 100%);
+    background: -ms-linear-gradient(left, rgba(233,175,27,1) 0%, rgba(233,175,27,1) 15%, rgba(255,243,168,1) 50%, rgba(233,175,27,1) 85%, rgba(233,175,27,1) 100%);
+    background: linear-gradient(to right, rgba(233,175,27,1) 0%, rgba(233,175,27,1) 15%, rgba(255,243,168,1) 50%, rgba(233,175,27,1) 85%, rgba(233,175,27,1) 100%);
+
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+
+    &:hover {
+        background-position: 108px;
+    }
+}
