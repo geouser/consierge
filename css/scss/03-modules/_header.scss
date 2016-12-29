@@ -1,8 +1,11 @@
          
 .mainHeader {
-    @include position(absolute, 0, auto, auto, 0);
     @include transition(all, .4s);
-    
+    margin: 0 0 20px;
+    .wrapper {
+        @include flex();
+        width: 1400px;
+    }
         /*.................media.............*/
         @include m800 {
             @include position(fixed, 0, auto, auto, -100%);
@@ -14,13 +17,45 @@
 /* ------------------------------------ */
 /*  NAV STYLES  */
 .mainNav {
+    width: -webkit-calc(50% - 66px);
+    width: calc(50% - 66px);
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            a {
+                color: #FFF;
+                text-transform: uppercase;
+                font: 21px $osb;
+            }
+        }
+    }
+    &:first-of-type {
+        text-align: left;
+        li {
+            margin-left: 70px;
+        }
+    }
+    &:last-of-type {
+        text-align: right;
+        li {
+            margin-right: 70px;
+        }
+    }
             /*.................media.............*/
             @include m800 { 
             }
             /*.............end media.............*/
 }
 
-
+.logo {
+    display: block;
+    width: 122px;
+    img {
+        max-width: 100%;
+    }
+}
 
 
 /* ------------------------------------ */
