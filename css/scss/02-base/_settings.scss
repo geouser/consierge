@@ -10,6 +10,8 @@ body {
     font-family: $cr;
     font-size: 1.125rem;
     color: #fff;
+    background-color: $brown;
+    padding-top: 20px;
 }
 
 article {
@@ -20,8 +22,42 @@ article {
     }
 }
 
+.title {
+    font: 72px $ob;
+}
+.block-title {
+    width: 100%;
+    text-align: center;
+    font: 36px $or;
+    text-transform: uppercase;
+    color: $gold;
+    margin-bottom: 35px;
+}
+.article {
+    text-align: left;
+    h2 {
+        color: $gold;
+        text-transform: uppercase;
+        font: 18px $cr;
+        margin-bottom: 22px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+.justify {
+    width: 100%;
+    .row {
+        display: block;
+        margin-top: 30px;
+        @include flex();
+    }
+    font: 18px $cb;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1.3px;
 
-
+}
 
 // lAYOUT
 // ---------------------------
@@ -29,4 +65,8 @@ article {
 	width: 1200px;
 	margin: 0 auto;
 	text-align: center;
+    &--wide {
+        width: 1570px;
+        max-width: 82%;
+    }
 }
