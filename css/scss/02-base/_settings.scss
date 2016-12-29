@@ -6,6 +6,22 @@ body {
 	height: 100%;
 }
 
+body {
+    font-family: $cr;
+    font-size: 18px;
+    color: #fff;
+}
+
+article {
+    p {
+        &:not(:last-child) {
+            margin-bottom: 1.22rem;
+        }
+    }
+}
+
+
+
 
 // lAYOUT
 // ---------------------------
