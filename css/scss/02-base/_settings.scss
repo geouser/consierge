@@ -28,6 +28,12 @@ article {
 
 .article {
     text-align: left;
+    h2 {
+        color: $gold;
+        text-transform: uppercase;
+        font: 18px $cr;
+        margin-bottom: 22px;
+    }
     p {
         margin-bottom: 20px;
     }
