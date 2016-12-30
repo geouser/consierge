@@ -12,3 +12,42 @@
     font-size: 1.125rem;
     text-transform: uppercase;
 }
+
+.share-block {
+    padding-top: 4.125rem;
+
+    .share-title {
+        color: $gold;
+        text-transform: uppercase;
+        font-family: $cr;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 2.25rem;
+    }
+
+    a {
+        display: inline-block;
+        height: 1.75rem;
+        vertical-align: middle;
+        margin: 0 1.25rem;
+
+        svg {
+            display: block;
+            width: auto;
+            height: 100%;
+
+            path {
+                -webkit-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                fill: #fff;
+            }
+        }
+
+        &:hover {
+            svg path {
+                fill: $gold;
+            }
+        }
+    }
+}

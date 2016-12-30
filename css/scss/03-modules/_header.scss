@@ -5,6 +5,10 @@
     .wrapper {
         @include flex();
         width: 1400px;
+
+        @media (max-width: 1400px) {
+            width: 100%;
+        }
     }
         /*.................media.............*/
         @include m800 {
