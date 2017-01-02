@@ -48,16 +48,23 @@
             z-index: 2;
         }
     }
-    &__controls {
-        width: 100%;
-        text-align: center;
-        span {
-            display: block;
-            color: #FFF;
-            margin-top: 75px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            font-family: $cb;
-        }
+}
+
+.join__controls {
+    width: 100%;
+    text-align: center;
+    padding: 4.75rem;
+
+    span {
+        display: block;
+        letter-spacing: 0.1em;
+        color: #FFF;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        font-family: $cb;
+    }
+
+    .button {
+        margin: 0 8px;
     }
 }

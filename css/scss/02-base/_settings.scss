@@ -18,6 +18,7 @@ body {
 .title {
     font: 4.5rem $ob;
     font-weight: normal;
+    margin-bottom: 3.375rem;
 }
 .block-title {
     width: 100%;
@@ -35,11 +36,41 @@ body {
         text-transform: uppercase;
         font-family: $cr;
         font-size: 1.125rem;
-        margin-bottom: 1.25rem;
     }
-    p {
+    p,
+    ul,
+    h2,
+    h3,
+    h4,
+    h5,
+    table,
+    ol, {
         &:not(:last-child) {
             margin-bottom: 1.25rem;
+        }
+    }
+
+    
+    ul {
+        list-style: none;
+
+        li {
+            padding-left: 10px;
+            position: relative;
+            letter-spacing: 0.05em;
+
+            &:before {
+                content: '';
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $gold;
+                position: absolute;
+                top: 0.75rem;
+                margin-top: -2px;
+                left: 0;
+                position: absolute;
+            }
         }
     }
 }
@@ -56,16 +87,26 @@ body {
     letter-spacing: 1.3px;
 
 }
+.bottom-padding {
+    padding-bottom: 140px;
+}
+
+
+
 
 // lAYOUT
 // ---------------------------
 .wrapper {
 	width: 1200px;
-    padding: 0 10px;
 	margin: 0 auto;
 	text-align: center;
     &--wide {
-        width: 1570px;
-        max-width: 82%;
+        width: 1600px;
+        
+
+        @media (max-width: 1600px) {
+            width: 100%;
+            padding: 0 15px;
+        }
     }
 }

@@ -1,0 +1,47 @@
+
+.contacts-form {
+    width: 780px;
+    margin: 0 auto;
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+
+.contact-inforamtion {
+    margin: 0 -20px;
+    @include flex($alignI: flex-start);
+    margin-bottom: 4.75rem;
+
+    .column {
+        width: -webkit-calc(25% - 40px);
+        width: calc(25% - 40px);
+        margin: 0 20px;
+
+        h2 {
+            color: $gold;
+            text-transform: uppercase;
+            font-family: $cr;
+            font-size: 1.125rem;
+            height: 3rem;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.map_canvas {
+    width: 1600px;
+    height: 380px;
+    margin: 0 auto;
+
+    @media (max-width: 1600px) {
+        width: 1200px;
+    }
+    
+    .gmnoprint,
+    .gm-style a {
+        display: none!important;
+    }
+}

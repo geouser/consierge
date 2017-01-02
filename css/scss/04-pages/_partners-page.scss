@@ -1,0 +1,24 @@
+.partners-box {
+    margin: 0 -20px;
+    @include flex($alignI: flex-start);
+
+    .column {
+        width: -webkit-calc(33.33% - 40px);
+        width: calc(33.33% - 40px);
+        margin: 0 20px;
+        text-align: center;
+
+        h2 {
+            color: $gold;
+            text-transform: uppercase;
+            font-family: $cr;
+            font-size: 1.125rem;
+            height: 3rem;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+}
