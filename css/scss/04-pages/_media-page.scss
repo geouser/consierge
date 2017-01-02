@@ -1,6 +1,10 @@
 .media-box {
     @include flex($alignI: flex-start, $justify: flex-start);
     margin: 0 -10px -20px;
+     @media (max-width: 700px) {
+         -webkit-justify-content: center;
+                 justify-content: center;
+     }
 }
 
 .post-preview {
@@ -11,7 +15,9 @@
     color: $text;
     text-align: left;
     margin-bottom: 20px;
-
+    @media (max-width: 700px) {
+        width: 280px;
+    }
     .post-thumbnail {
         margin: 0;
         display: block;

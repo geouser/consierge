@@ -5,7 +5,15 @@
     background-size: cover;
     padding: 120px 0;
     color: #fff;
-
+    @media (max-width: 1600px) {
+        padding: 100px 0;
+    }
+    @media (max-width: 600px) {
+        padding: 80px 0;
+    }
+    @media (max-width: 400px) {
+        padding: 40px 0;
+    }
     &-title {
         font-family: $or;
         font-size: 2.25rem;
@@ -25,7 +33,9 @@
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
-
+            @media (max-width: 600px) {
+                margin: 10px 30px;
+            }
             &:hover {
                 -webkit-transform: scale(1.1);
                 -ms-transform: scale(1.1);

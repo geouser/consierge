@@ -1,13 +1,23 @@
 .partners-box {
     margin: 0 -20px;
     @include flex($alignI: flex-start);
-
+    @media (max-width: 700px) {
+        margin: 0;
+    }
     .column {
         width: -webkit-calc(33.33% - 40px);
         width: calc(33.33% - 40px);
         margin: 0 20px;
         text-align: center;
-
+        @media (max-width: 700px) {
+            padding: 0 10px;
+            width: 33%;
+            margin: 0;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
         h2 {
             color: $gold;
             text-transform: uppercase;
@@ -15,6 +25,9 @@
             font-size: 1.125rem;
             height: 3rem;
             margin-bottom: 10px;
+            @media (max-width: 700px) {
+                 height: auto;
+            }
         }
 
         ul {
