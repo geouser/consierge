@@ -16,7 +16,7 @@
             @include position(fixed, 0, 0, auto, auto);
             width: 260px;
             height: 100%;
-            background-color: $brown;
+            background-color: #1d1719;
             padding: 10px 0 40px;
             -webkit-transform: translateX(260px);
                -moz-transform: translateX(260px);
@@ -27,6 +27,7 @@
                 display: block;
             }
             &.active {
+                box-shadow: -10px 15px 20px rgba(0,0,0, .4);
                 -webkit-transform: translateX(0px);
                -moz-transform: translateX(0px);
                 -ms-transform: translateX(0px);
