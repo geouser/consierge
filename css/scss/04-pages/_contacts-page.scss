@@ -2,9 +2,12 @@
 .contacts-form {
     width: 780px;
     margin: 0 auto;
-
+    max-width: 100%;
     .button {
         margin-top: 20px;
+    }
+    @media (max-width: 800px) {
+        
     }
 }
 
@@ -18,7 +21,11 @@
         width: -webkit-calc(25% - 40px);
         width: calc(25% - 40px);
         margin: 0 20px;
-
+        @media (max-width: 760px) {
+            width: 50%;
+            padding: 0 20px;
+            margin: 0 0 30px;
+        }
         h2 {
             color: $gold;
             text-transform: uppercase;
@@ -26,6 +33,9 @@
             font-size: 1.125rem;
             height: 3rem;
             margin-bottom: 10px;
+            @media (max-width: 760px) {
+                height: auto;
+            }
         }
     }
 }
@@ -38,6 +48,9 @@
 
     @media (max-width: 1600px) {
         width: 1200px;
+    }
+    @media (max-width: 760px) {
+        height: 300px;
     }
     
     .gmnoprint,

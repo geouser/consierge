@@ -7,6 +7,13 @@
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    @media (max-width: 1600px) {
+        margin-bottom: 80px;
+        height: 340px;
+    }
+    @media (max-width: 500px) {
+        margin-bottom: 40px;
+    }
     &:before {
         display: inline-block;
         vertical-align: middle;

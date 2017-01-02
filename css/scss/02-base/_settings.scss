@@ -4,6 +4,7 @@
 html,
 body {
 	height: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -13,12 +14,40 @@ body {
     background-color: $brown;
     padding-top: 20px;
 }
+@media (max-width: 1600px) {
+    html {
+        font-size: 15px;
+    }
+}
 
-
+@media (max-width: 1300px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-width: 700px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 12px;
+    }
+}
 .title {
     font: 4.5rem $ob;
     font-weight: normal;
     margin-bottom: 3.375rem;
+    @media (max-width: 1600px) {
+        font-size: 4rem;
+    }
+    @media (max-width: 700px) {
+        font-size: 3rem;
+        margin: 0 auto 2rem;
+        display: block;
+        max-width: 77%;
+    }
 }
 .block-title {
     width: 100%;
@@ -28,6 +57,12 @@ body {
     text-transform: uppercase;
     color: $gold;
     margin-bottom: 35px;
+    @media (max-width: 1600px) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 1300px) {
+        margin-bottom: 10px;
+    }
 }
 .article {
     text-align: left;
@@ -36,6 +71,9 @@ body {
         text-transform: uppercase;
         font-family: $cr;
         font-size: 1.125rem;
+        @media (max-width: 500px) {
+             font-size: 1.4rem;
+        }
     }
     p,
     ul,
@@ -49,7 +87,11 @@ body {
             margin-bottom: 1.25rem;
         }
     }
-
+    @media (max-width: 1300px) {
+        p {
+            font-size: 15px;
+        }
+    }
     
     ul {
         list-style: none;
@@ -80,15 +122,27 @@ body {
         display: block;
         margin-top: 30px;
         @include flex();
+        @media (max-width: 1000px) {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+            span {
+                display: inline-block;
+                margin: 0 10px;
+                line-height: 25px;
+            }
+        }
     }
-    font: 18px $cb;
+    font: 1.25rem $cb;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 1.3px;
-
 }
 .bottom-padding {
     padding-bottom: 140px;
+    @media (max-width: 1600px) {
+        padding-bottom: 80px;
+    }
 }
 
 
@@ -108,5 +162,9 @@ body {
             width: 100%;
             padding: 0 15px;
         }
+    }
+    @media (max-width: 1200px) {
+        width: 100%;
+        padding: 0 15px;
     }
 }

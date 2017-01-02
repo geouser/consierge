@@ -1,5 +1,11 @@
 .elite-club-gulf {
     .packages-box {
         margin-bottom: 75px;
+        @media (max-width: 1300px) {
+             margin-bottom: 50px;
+        }
+        @media (max-width: 800px) {
+             margin-bottom: 30px;
+        }
     }
 }

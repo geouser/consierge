@@ -1,6 +1,12 @@
 .grid {
     @include flex($justify: center);
     margin-top: 65px;
+     @media (max-width: 1300px) {
+         margin-top: 45px;
+     }
+     @media (max-width: 800px) {
+         margin-top: 25px;
+     }
     &__title {
         width: 100%;
         text-align: center;
@@ -8,6 +14,13 @@
         text-transform: uppercase;
         color: $gold;
         margin-bottom: 35px;
+        @media (max-width: 1600px) {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 1300px) {
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
     }
     &__item {
         width: 380px;
@@ -20,6 +33,10 @@
         -webkit-background-size: cover;
              -o-background-size: cover;
                 background-size: cover;
+        @media (max-width: 400px) {
+            width: 280px;
+            height: 200px;
+        }
         &:after {
             display: block;
             position: absolute;
@@ -43,9 +60,10 @@
             max-width: 98%;
             color: #FFF;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 1.25rem;
             position: relative;
             z-index: 2;
+            padding: 0 5px;
         }
     }
 }
@@ -54,7 +72,9 @@
     width: 100%;
     text-align: center;
     padding: 4.75rem;
-
+    @media (max-width: 1300px) {
+        padding: 2rem 4.75rem 4rem;
+    }
     span {
         display: block;
         letter-spacing: 0.1em;
@@ -66,5 +86,13 @@
 
     .button {
         margin: 0 8px;
+    }
+    @media (max-width: 640px) {
+        padding: 4rem 0;
+        .button {
+            width: 280px;
+            display: block;
+            margin: 10px auto;
+        }
     }
 }
