@@ -1,0 +1,33 @@
+.advantages {
+    @include flex($alignI: flex-start);
+    padding: 0 14%;
+    &__item {
+        width: 33.333%;
+        padding: 0 5%;
+        text-align: center;
+        margin-top: 60px;
+        i {
+            display: block;
+            height: 160px;
+            margin-bottom: 30px;
+            img {
+                max-height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 98%;
+            }
+            &:after {
+                content: "";
+                height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        span {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+}
