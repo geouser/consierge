@@ -67,6 +67,15 @@ jQuery(document).ready(function($) {
             }
     });
 
+    if ( $('#fullpage').length > 0 ) {
+        $('#fullpage').fullpage({
+            lockAnchors: false,
+            navigation: true,
+            navigationPosition: 'right',
+            sectionSelector: '.fullpage-section'
+        });
+    }
+
 
 
     /*---------------------------

@@ -17,7 +17,7 @@
             width: 260px;
             height: 100%;
             background-color: #1d1719;
-            padding: 10px 0 40px;
+            padding: 40px 0;
             -webkit-transform: translateX(260px);
                -moz-transform: translateX(260px);
                 -ms-transform: translateX(260px);
@@ -33,6 +33,7 @@
                 -ms-transform: translateX(0px);
                  -o-transform: translateX(0px);
                     transform: translateX(0px);
+                    overflow: auto;
             }
         }
         /*.............end media..............*/
@@ -110,7 +111,9 @@
     display: block;
     width: 122px;
     img {
-        max-width: 100%;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
     }
     @include m1000 {
         margin: 20px auto;

@@ -1,0 +1,71 @@
+html.fp-enabled {
+    padding: 160px;
+
+    @media (max-height: 900px) {
+        padding: 150px;
+    }
+    @media (max-height: 850px) {
+        padding: 140px;
+    }
+    @media (max-height: 800px) {
+        padding: 130px;
+    }
+    @media (max-height: 750px) {
+        padding: 123px;
+    }
+    @media (max-height: 700px) {
+        padding: 115px;
+    }
+    @media (max-height: 650px) {
+        padding: 107px;
+    }
+    @media (max-height: 600px) {
+        padding: 100px;
+    }
+    @media (max-height: 550px) {
+        padding: 90px;
+    }
+    @media (max-height: 500px) {
+        padding: 82px;
+    }
+    @media (max-height: 450px) {
+        padding: 75px;
+    }
+}
+
+
+
+.fullpage-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: #231f20;
+    height: 16.5%;
+    padding: 20px 0;
+    margin-bottom: 0;
+
+    .wrapper {
+        height: 100%;
+    }
+
+    .logo {
+        height: 100%;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+
+
+.fullpage-footer {
+    position: fixed;
+    width: 100%;
+    background-color: #231f20;
+    height: 15%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
