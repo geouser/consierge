@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
         });
     }
 
-    if ( $('.flux-slider-1').length > 0 ) {
+    /*if ( $('.flux-slider-1').length > 0 ) {
         window.myFlux1 = new flux.slider('.flux-slider-1', {
             autoplay: true,
             pagination: false,
@@ -103,7 +103,24 @@ jQuery(document).ready(function($) {
             pagination: false,
             transitions: ['swipe'],
         });
-    }
+    }*/
+
+    // On before slide change
+    $('.flux-slider').on('init', function(event, slick, currentSlide, nextSlide){
+        $(slick.$slides[0]).addClass('zoom');
+    });
+    $('.flux-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        console.log($(this))
+        $(this).find('.slick-slide').removeClass('zoom');
+        $(slick.$slides[nextSlide]).addClass('zoom');
+    });
+    $('.flux-slider').slick({
+        fade: true,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 6000
+    })
 
 
 
