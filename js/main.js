@@ -72,7 +72,36 @@ jQuery(document).ready(function($) {
             lockAnchors: false,
             navigation: true,
             navigationPosition: 'right',
-            sectionSelector: '.fullpage-section'
+            sectionSelector: '.fullpage-section',
+        });
+    }
+
+    if ( $('.flux-slider-1').length > 0 ) {
+        window.myFlux1 = new flux.slider('.flux-slider-1', {
+            autoplay: true,
+            pagination: false,
+            transitions: ['swipe'],
+            delay: 6000,
+            onTransitionEnd: function (data) {
+                window.myFlux2.next()
+            }
+        });
+    }
+    if ( $('.flux-slider-2').length > 0 ) {
+        window.myFlux2 = new flux.slider('.flux-slider-2', {
+            autoplay: false,
+            pagination: false,
+            transitions: ['swipe'],
+            onTransitionEnd: function (data) {
+                window.myFlux3.next()
+            }
+        });
+    }
+    if ( $('.flux-slider-3').length > 0 ) {
+        window.myFlux3 = new flux.slider('.flux-slider-3', {
+            autoplay: false,
+            pagination: false,
+            transitions: ['swipe'],
         });
     }
 
