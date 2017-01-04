@@ -5,7 +5,7 @@
         width: 33.333%;
         padding: 0 5%;
         text-align: center;
-        margin-top: 60px;
+        margin-top: 40px;
         i {
             display: block;
             height: 160px;
@@ -32,13 +32,18 @@
     }
 }
 
-.fp-box.club-packages .packages-title {
+
+.club-packages .packages-title {
     max-width: 60%;
     display: block;
     margin: 0 auto;
     font-size: 24px;
+    padding: 40px 0;
 }
-.fp-box.club-packages .button {
+.packages-box {
+    width: 100%;
+}
+.club-packages .button {
     margin-top: 60px;
 }
 
