@@ -111,18 +111,31 @@ html.fp-enabled {
     bottom: 0;
     left: 0;
     z-index: 2;
-    @include flex($alignI: center, $justify: space-between);
+    @include flex($alignI: center, $justify: center);
 
     p {
         padding: 0 2.5%;
         width: 33.333%;
         text-align: center;
 
+        @media (max-width: 991px) {
+            width: 50%;
+        }
+
         &:first-child {
             text-align: left;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
         }
         &:last-child {
             text-align: right;
+
+            @media (max-width: 991px) {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         a {
@@ -205,9 +218,11 @@ html.fp-enabled {
         }
 
         @media (max-width: 1199px) {
-            line-height: 4rem;
+            line-height: normal;
             padding: 0 30px;
             width: 100%;
+            letter-spacing: normal;
+            margin-bottom: 20px;
         }
         
 
@@ -245,7 +260,7 @@ html.fp-enabled {
     }
 
     @media (max-width: 560px) {
-        padding: 50px 0;
+        padding: 50px 0 0;
         border-top: 0;
     }
 }
@@ -336,7 +351,7 @@ html.fp-enabled {
         display: inline-block;
         vertical-align: middle;
         border: 2px solid #fff;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .6);
         padding: 0 10px;
         margin: 0 0.5rem;
         color: #fff;
