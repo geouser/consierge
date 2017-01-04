@@ -110,6 +110,9 @@
 .logo {
     display: block;
     width: 122px;
+    @media (max-width: 1600px) {
+        width: 100px;
+    }
     img {
         display: block;
         width: 100%;
