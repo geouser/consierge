@@ -79,20 +79,20 @@ jQuery(document).ready(function($) {
 
     $('.slider-1').slideshowify({
         parentEl:'.top-slider',
-        aniSpeedMin : 6500,
-        aniSpeedMax : 8000,
+        aniSpeedMin : 7000,
+        aniSpeedMax : 9000,
         randomize   : true,
     });
     $('.slider-2').slideshowify({
         parentEl:'.left-slider',
-        aniSpeedMin : 5500,
+        aniSpeedMin : 6000,
         aniSpeedMax : 7000,
         randomize   : true,
     });
     $('.slider-3').slideshowify({
         parentEl:'.right-slider',
-        aniSpeedMin : 7000,
-        aniSpeedMax : 7500,
+        aniSpeedMin : 6000,
+        aniSpeedMax : 7000,
         randomize   : true,
     });
 
