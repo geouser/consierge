@@ -116,14 +116,18 @@
         }
         @media (max-width: 600px) {
             width: 33.32%;
-            height: 80px;
+            height: 90px;
         }
         @media (max-width: 500px) {
             width: 33.32%;
-            height: 70px;
+            height: 80px;
         }
         @media (max-width: 500px) {
-            height: 60px;
+            height: 70px;
+        }
+        @media (max-width: 400px) {
+            width: 49%;
+            height: 120px;
         }
         &:before {
             content: "";
