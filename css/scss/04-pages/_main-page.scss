@@ -233,6 +233,8 @@ html.fp-enabled {
 
 
 .flux-slider {
+    margin: 0;
+    z-index: -1;
     &:before {
         content: '';
         width: 100%;
@@ -294,4 +296,13 @@ html.fp-enabled {
             background-size: cover;
         }
     }
+}
+
+
+.rev_slider_wrapper {
+    width: 100%!important;
+    position: relative!important;
+    left: 0!important;
+    height: 100%!important;
+    overflow: hidden!important;
 }

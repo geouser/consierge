@@ -17,6 +17,7 @@
         <!--<link rel="shortcut icon" href="images/favicon.ico">-->
         
         <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+        <link rel="stylesheet" href="js/revolution-slider/css/settings.css">
         <link rel="stylesheet" href="css/general.css">
     </head>
     <body>
@@ -79,13 +80,35 @@
                             </form>
                         </div>
                     </div>
-                    <div class="top-slider flux-slider-1 flux-slider">
+                    <div class="top-slider rev-slider">
+                        <div class="rev_slider_wrapper">
+                            <!-- the ID here will be used in the inline JavaScript below to initialize the slider -->
+                            <div id="rev_slider_1" class="rev_slider" style="display:none">
+                                <ul>
+                                    <li data-transition="curtain-3">
+                                        <img src="images/offer_serv_bg.jpg" alt="Sky" class="rev-slidebg">
+                                    </li>
+                                    <li data-transition="curtain-3">
+                                        <img src="images/offer_about_b.jpg" alt="Sky" class="rev-slidebg">
+                                    </li>
+                                    <li data-transition="curtain-3">
+                                        <img src="images/offer_buis_bg.jpg" alt="Sky" class="rev-slidebg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- end top slider -->
+
+                    <div class="left-slider flux-slider-2 flux-slider">
+                        <div class="slick-slide" style="background-image: url(images/offer_serv_bg.jpg);"></div>
                         <div class="slick-slide" style="background-image: url(images/offer_about_b.jpg);"></div>
                         <div class="slick-slide" style="background-image: url(images/offer_buis_bg.jpg);"></div>
-                        <div class="slick-slide" style="background-image: url(images/offer_serv_bg.jpg);"></div>
                     </div>
-                    <div class="left-slider flux-slider-2"></div>
-                    <div class="right-slider flux-slider-3 "></div>    
+                    <div class="right-slider flux-slider-3 flux-slider">
+                        <div class="slick-slide" style="background-image: url(images/offer_buis_bg.jpg);"></div>
+                        <div class="slick-slide" style="background-image: url(images/offer_about_b.jpg);"></div>
+                        <div class="slick-slide" style="background-image: url(images/offer_serv_bg.jpg);"></div>
+                    </div>    
                 </div>
             </section><!-- end fullpage-section -->
 
@@ -151,6 +174,19 @@
         <script src="js/jquery.fullpage.extensions.min.js"></script>
         <script src="js/jquery.fullpage.min.js"></script>
         <script src="js/flux.min.js"></script>
+
+        <script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+        <script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>
