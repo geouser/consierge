@@ -10,7 +10,7 @@
     &__title {
         width: 100%;
         text-align: center;
-        font: 36px $or;
+        font: 36px $l;
         text-transform: uppercase;
         color: $gold;
         margin-bottom: 35px;
@@ -27,6 +27,7 @@
         height: 250px;
         margin: 10px;
         position: relative;
+        font-family: $l;
         text-align: center;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -81,7 +82,7 @@
         color: #FFF;
         margin-bottom: 12px;
         text-transform: uppercase;
-        font-family: $cb;
+        font-family: $l;
     }
 
     .button {
