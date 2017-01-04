@@ -42,31 +42,32 @@ html.fp-enabled {
 }
 
 
+@media (min-width: 1001px) {
+    .fullpage-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        background-color: #231f20;
+        height: 16.5%;
+        padding: 20px 0;
+        margin-bottom: 0;
 
-.fullpage-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    right: 0;
-    background-color: #231f20;
-    height: 16.5%;
-    padding: 20px 0;
-    margin-bottom: 0;
+        @media (min-height: 950px) {
+            height: 161px;
+        }
 
-    @media (min-height: 950px) {
-        height: 161px;
-    }
-
-    .wrapper {
-        height: 100%;
-    }
-
-    .logo {
-        height: 100%;
-        img {
-            width: auto;
+        .wrapper {
             height: 100%;
+        }
+
+        .logo {
+            height: 100%;
+            img {
+                width: auto;
+                height: 100%;
+            }
         }
     }
 }
