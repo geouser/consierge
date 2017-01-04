@@ -38,7 +38,23 @@ html.fp-enabled {
             border-width: 75px;
         }    
     }
-    
+}
+
+#fp-nav.right {
+    ul li a span {
+        background-color: #fff;
+        width: 8px;
+        height: 8px;
+        margin: -4px 0 0 -4px;
+    }
+
+    ul li a.active span {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: 2px solid $gold;
+        margin: -5px 0 0 -5px;
+    }
 }
 
 
@@ -242,21 +258,9 @@ html.fp-enabled {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .6);
+        background-color: rgba(0, 0, 0, .4);
         z-index: 1;
     }
 }
 
 
-.rev_slider_wrapper {
-    width: 100%!important;
-    position: relative!important;
-    left: 0!important;
-    height: 100%!important;
-    overflow: hidden!important;
-    z-index: -1;
-    
-}
-.tp-bannertimer {
-    display: none;
-}
