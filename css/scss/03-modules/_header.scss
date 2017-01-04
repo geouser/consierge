@@ -60,6 +60,15 @@
                 color: #FFF;
                 text-transform: uppercase;
                 font: 1.3rem $osb;
+                @include transition(all, .4s);
+                &:hover {
+                     background: linear-gradient(to bottom, rgba(233,175,27,1) 0%,rgba(226,208,167,1) 50%,rgba(233,175,27,1) 100%);
+                    background-clip: text;
+                    text-fill-color: transparent;
+                    background: -webkit-linear-gradient(to bottom, rgba(233,175,27,1) 0%,rgba(226,208,167,1) 50%,rgba(233,175,27,1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
                 @media (max-width: 1300px) {
                    font-size: 18px;
                 }
