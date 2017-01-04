@@ -37,6 +37,9 @@ html.fp-enabled {
         @media (max-height: 450px) {
             border-width: 75px;
         }    
+        @media (max-width: 1200px) {
+            border: none;
+        }
     }
     
 }
@@ -112,7 +115,17 @@ html.fp-enabled {
     .wrap {
         width: 100%;
     }
+    @media (max-width: 1200px) {
+        padding: 60px 0;
+    }
 }
+
+@media (max-width: 1200px) {
+    .fp-section.fp-table, .fp-slide.fp-table, .fp-tableCell {
+        height: auto !important;
+    }    
+}
+
 
 
 .top-panel {
@@ -260,4 +273,18 @@ html.fp-enabled {
 }
 .tp-bannertimer {
     display: none;
+}
+
+.fullpage .footer {
+    @media (max-width: 1600px) {
+        font-size: 1rem;
+        .wrapper {
+            width: 1000px;
+        }
+    }
+    @media (max-width: 1000px) {
+        .wrapper {
+            width: 100%;
+        }
+    }
 }
