@@ -2,25 +2,25 @@ html.fp-enabled {
     .fp-box {
         border-style: solid;
         border-color: transparent;
-        border-width: 163px;
+        border-width: 165px;
         height: 100%;
         width: 100%;
         position: relative;
 
         @media (max-height: 900px) {
-            border-width: 150px;
+            border-width: 154px;
         }
         @media (max-height: 850px) {
-            border-width: 140px;
+            border-width: 144px;
         }
         @media (max-height: 800px) {
-           border-width: 133px;
+           border-width: 137px;
         }
         @media (max-height: 750px) {
-            border-width: 123px;
+            border-width: 127px;
         }
         @media (max-height: 700px) {
-            border-width: 115px;
+            border-width: 119px;
         }
         @media (max-height: 650px) {
             border-width: 107px;
@@ -112,6 +112,11 @@ html.fp-enabled {
     left: 0;
     z-index: 2;
     @include flex($alignI: center, $justify: center);
+
+    @media (max-width: 1199px) {
+        height: 50px;
+        position: static;
+    }
 
     p {
         padding: 0 2.5%;
