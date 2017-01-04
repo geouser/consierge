@@ -77,51 +77,24 @@ jQuery(document).ready(function($) {
         });
     }
 
-    /*if ( $('.flux-slider-1').length > 0 ) {
-        window.myFlux1 = new flux.slider('.flux-slider-1', {
-            autoplay: true,
-            pagination: false,
-            transitions: ['swipe'],
-            delay: 6000,
-            onTransitionEnd: function (data) {
-                window.myFlux2.next()
-            }
-        });
-    }
-    if ( $('.flux-slider-2').length > 0 ) {
-        window.myFlux2 = new flux.slider('.flux-slider-2', {
-            autoplay: false,
-            pagination: false,
-            transitions: ['swipe'],
-            onTransitionEnd: function (data) {
-                window.myFlux3.next()
-            }
-        });
-    }
-    if ( $('.flux-slider-3').length > 0 ) {
-        window.myFlux3 = new flux.slider('.flux-slider-3', {
-            autoplay: false,
-            pagination: false,
-            transitions: ['swipe'],
-        });
-    }*/
-
-    // On before slide change
-    $('.flux-slider').on('init', function(event, slick, currentSlide, nextSlide){
-        $(slick.$slides[0]).addClass('zoom');
+    $('.slider-1').slideshowify({
+        parentEl:'.top-slider',
+        aniSpeedMin : 6500,
+        aniSpeedMax : 8000,
+        randomize   : true,
     });
-    $('.flux-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        console.log($(this))
-        $(this).find('.slick-slide').removeClass('zoom');
-        $(slick.$slides[nextSlide]).addClass('zoom');
+    $('.slider-2').slideshowify({
+        parentEl:'.left-slider',
+        aniSpeedMin : 5500,
+        aniSpeedMax : 7000,
+        randomize   : true,
     });
-    $('.flux-slider').slick({
-        fade: true,
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 6000
-    })
+    $('.slider-3').slideshowify({
+        parentEl:'.right-slider',
+        aniSpeedMin : 7000,
+        aniSpeedMax : 7500,
+        randomize   : true,
+    });
 
 
     $('#rev_slider_1').show().revolution({
