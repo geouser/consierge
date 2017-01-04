@@ -123,25 +123,42 @@ jQuery(document).ready(function($) {
     })
 
 
-    jQuery('#rev_slider_1').show().revolution({
+    $('#rev_slider_1').show().revolution({
         /* options are 'auto', 'fullwidth' or 'fullscreen' */
         sliderLayout: 'auto',
         /* basic navigation arrows and bullets */
         navigation: {
             arrows: {
                 enable: false,
-                style: 'hesperiden',
-                hide_onleave: false
             },
             bullets: {
                 enable: false,
-                style: 'hesperiden',
-                hide_onleave: false,
-                h_align: 'center',
-                v_align: 'bottom',
-                h_offset: 0,
-                v_offset: 20,
-                space: 5
+            }
+        }
+    });
+    $('#rev_slider_2').show().revolution({
+        /* options are 'auto', 'fullwidth' or 'fullscreen' */
+        sliderLayout: 'auto',
+        /* basic navigation arrows and bullets */
+        navigation: {
+            arrows: {
+                enable: false,
+            },
+            bullets: {
+                enable: false,
+            }
+        }
+    });
+    $('#rev_slider_3').show().revolution({
+        /* options are 'auto', 'fullwidth' or 'fullscreen' */
+        sliderLayout: 'auto',
+        /* basic navigation arrows and bullets */
+        navigation: {
+            arrows: {
+                enable: false,
+            },
+            bullets: {
+                enable: false,
             }
         }
     });
