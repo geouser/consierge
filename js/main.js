@@ -73,6 +73,7 @@ jQuery(document).ready(function($) {
             navigation: true,
             navigationPosition: 'right',
             sectionSelector: '.fullpage-section',
+            responsiveWidth: 1200,
         });
     }
 
